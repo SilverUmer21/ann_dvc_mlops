@@ -62,3 +62,25 @@ stages:
       md5: 578744b17a066abe904fca9ae78adf5f.dir
       size: 1246091
       nfiles: 2
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - path: data/processed
+      hash: md5
+      md5: 501ab7b973ba4af0d7c423a43ae4f7b4.dir
+      size: 219590768
+      nfiles: 6
+    - path: models
+      hash: md5
+      md5: 578744b17a066abe904fca9ae78adf5f.dir
+      size: 1246091
+      nfiles: 2
+    - path: src/evaluate.py
+      hash: md5
+      md5: 458bb1c867353c540827a86fc11061ef
+      size: 1032
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: 447e8521c5989af3fdc1efa628bac27c
+      size: 83
