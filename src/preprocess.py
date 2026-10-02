@@ -30,3 +30,5 @@ os.makedirs("data/processed", exist_ok= True)
 np.save("data/processed/x_train.npy", x_train)
 np.save("data/processed/y_train.npy", y_train)
 
+print(x_train.shape)
+print(y_train.shape)
