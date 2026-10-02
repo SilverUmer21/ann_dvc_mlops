@@ -30,5 +30,13 @@ os.makedirs("data/processed", exist_ok= True)
 np.save("data/processed/x_train.npy", x_train)
 np.save("data/processed/y_train.npy", y_train)
 
-print(x_train.shape)
-print(y_train.shape)
+np.save("data/processed/x_val.npy", x_val)
+np.save("data/processed/y_val.npy", y_val)
+
+np.save("data/processed/x_test.npy", x_test)
+np.save("data/processed/y_test.npy", y_test)
+
+print("Preprocessing completed successfully.")
+print("Train:", x_train.shape)
+print("Validation:", x_val.shape)
+print("Test:", x_test.shape)
